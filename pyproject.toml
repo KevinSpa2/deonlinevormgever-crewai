@@ -1,0 +1,23 @@
+[project]
+name = "deonlinevormgever"
+version = "0.1.0"
+description = "DeOnlineVormgever"
+authors = [{ name = "", email = "" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.120.1,<1.0.0"
+]
+
+[project.scripts]
+deonlinevormgever = "deonlinevormgever.main:run"
+run_crew = "deonlinevormgever.main:run"
+train = "deonlinevormgever.main:train"
+replay = "deonlinevormgever.main:replay"
+test = "deonlinevormgever.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
