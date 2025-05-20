@@ -19,8 +19,8 @@ def run():
     inputs = {
         'brandbook_path': 'knowledge/brandbook.pdf',
         'website_url': 'https://almelo.nl/',
-        'goal': 'Promote a modern eco-friendly clothing brand',
-        'audience': 'Young professionals interested in sustainable fashion'
+        'goal': 'Een promotie flyer voor een nieuwbouwwijk in Almelo',
+        'audience': 'Jonge gezinnen die op zoek zijn naar een betaalbare woning in de omgeving Almgelo'
     }
     
     try:
@@ -36,8 +36,8 @@ def train():
     inputs = {
         'brandbook_path': 'knowledge/brandbook.pdf',
         'website_url': 'https://almelo.nl/',
-        'goal': 'Promote a modern eco-friendly clothing brand',
-        'audience': 'Young professionals interested in sustainable fashion'
+        'goal': 'Een promotie flyer voor een nieuwbouwwijk in Almelo',
+        'audience': 'Jonge gezinnen die op zoek zijn naar een betaalbare woning in de omgeving Almgelo'
     }
     try:
         Deonlinevormgever().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -62,8 +62,8 @@ def test():
     inputs = {
         'brandbook_path': 'knowledge/brandbook.pdf',
         'website_url': 'https://almelo.nl/',
-        'goal': 'Promote a modern eco-friendly clothing brand',
-        'audience': 'Young professionals interested in sustainable fashion'
+        'goal': 'Een promotie flyer voor een nieuwbouwwijk in Almelo',
+        'audience': 'Jonge gezinnen die op zoek zijn naar een betaalbare woning in de omgeving Almgelo'
     }
     
     try:
