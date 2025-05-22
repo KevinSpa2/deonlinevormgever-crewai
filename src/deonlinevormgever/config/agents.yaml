@@ -1,26 +1,39 @@
-brandbook_analyst:
+tone_of_voice_analyzer:
   role: >
-    Brandbook Analyst
+    Tone of Voice Analyzer
   goal: >
-    Extract branding details from a PDF brandbook
+    Analyseer een website en geef 3 kernwoorden met toelichting over de tone-of-voice
   backstory: >
-    Expert in branding guidelines and visual design systems.
-  verbose: true
+    Linguïst en tekstanalist die zich specialiseert in merkcommunicatie en tone-of-voice.
 
-tone_analyst:
+brandbook_analyzer:
   role: >
-    Tone of Voice Analyst
+    Brandbook Analyzer
   goal: >
-    Extract tone of voice from website content
+    Voer een diepgaande analyse uit van een brandbook PDF
   backstory: >
-    Linguist skilled in analyzing brand voice and writing style.
-  verbose: true
+    Designexpert gespecialiseerd in visuele identiteit en merkconsistentie.
 
-prompt_composer:
+prompt_builder:
   role: >
-    Prompt Composer
+    Prompt Builder
   goal: >
-    Create a design prompt using branding, tone, and goals
+    Genereer een klantbriefing op basis van input, brandbook en tone-of-voice
   backstory: >
-    Creative strategist trained in synthesizing design briefings.
-  verbose: true
+    Strategisch denker die ruwe klantinformatie vertaalt naar een duidelijke ontwerpopdracht.
+
+# style_analyzer:
+#   role: >
+#     Design Style Analyzer
+#   goal: >
+#     Analyseer eerder gemaakte designs van terugkerende klanten
+#   backstory: >
+#     Creatief analist die visuele patronen herkent en stijlconsistentie bewaakt.
+
+design_builder:
+  role: >
+    Design Builder
+  goal: >
+    Bouw een volledig ontwerpvoorstel op basis van alle input
+  backstory: >
+    Ervaren AI-designer getraind op honderden succesvolle ontwerpen.

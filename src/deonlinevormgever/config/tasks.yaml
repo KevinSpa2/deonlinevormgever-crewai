@@ -1,3 +1,12 @@
+analyze_tone:
+  description: >
+    Gebruik de tool 'ToneOfVoiceExtractor' om de website op '{website_url}' te analyseren.
+    Geef een JSON terug met 3 kernwoorden en voor elk woord een korte uitleg in 1 zin.
+  expected_output: >
+    JSON met drie tone-woorden en hun verklaringen
+  agent: tone_of_voice_analyzer
+  input_vars: ["website_url"]
+
 analyze_brandbook:
   description: >
     Gebruik de tool om het brandbook PDF-bestand op pad '{brandbook_path}' te analyseren.
@@ -8,17 +17,16 @@ analyze_brandbook:
     - Een korte beschrijving van de visuele stijl (maximaal 3 zinnen)
   expected_output: >
     JSON met de brandinginformatie zoals hierboven beschreven
-  agent: brandbook_analyst
+  agent: brandbook_analyzer
   input_vars: ["brandbook_path"]
 
-analyze_tone:
-  description: >
-    Gebruik de tool 'ToneOfVoiceExtractor' om de website op '{website_url}' te analyseren.
-    Geef een JSON terug met 3 kernwoorden en voor elk woord een korte uitleg in 1 zin.
-  expected_output: >
-    JSON met drie tone-woorden en hun verklaringen
-  agent: tone_analyst
-  input_vars: ["website_url"]
+# analyze_style:
+#   description: >
+#     Analyseer de stijl van eerdere ontwerpen voor klant '{client_name}'.
+#   expected_output: >
+#     JSON met beschrijving van visuele stijl, indeling, kleuren en fonts.
+#   agent: style_analyzer
+#   input_vars: ["client_name"]
 
 build_prompt:
   description: >
@@ -27,5 +35,13 @@ build_prompt:
     tot een gestructureerde instructie voor een designer in JSON-vorm.
   expected_output: >
     JSON met design_instruction, inclusief kleuren, fonts, toon, visuele stijl en ontwerpinstructies
-  agent: prompt_composer
+  agent: prompt_builder
   input_vars: ["brandbook_json", "tone_json", "goal", "audience"]
+
+generate_design:
+  description: >
+    Bouw het ontwerp op basis van briefing en stijl.
+  expected_output: >
+    JSON met finale instructie en designdetails.
+  agent: design_builder
+  input_vars: ["design_prompt_json"]

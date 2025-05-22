@@ -20,7 +20,8 @@ def run():
         'brandbook_path': 'knowledge/brandbook.pdf',
         'website_url': 'https://almelo.nl/',
         'goal': 'Een promotie flyer voor een nieuwbouwwijk in Almelo',
-        'audience': 'Jonge gezinnen die op zoek zijn naar een betaalbare woning in de omgeving Almgelo'
+        'audience': 'Jonge gezinnen die op zoek zijn naar een betaalbare woning in de omgeving Almgelo',
+        "client_name": "Almelo"
     }
     
     try:
